@@ -1,4 +1,7 @@
-# Implementation of Training Consistency Models with Variational Noise Coupling
+# Implementation of ``Training Consistency Models with Variational Noise Coupling''
+This repository houses the implementation of our work, *VCT: Training Consistency Models with Variational Noise Coupling*
+- arXiv: 
+
 ## Requirements
 This code uses Weights & Biases, and assumes that you have your wandb key in a file named `wandb_config.py` in a variable named `key=your_wandb_key`.
 This code uses the following libraries:
@@ -55,3 +58,5 @@ Parts of the code were adapted from the following codebases:
 - [https://github.com/atong01/conditional-flow-matching](https://github.com/atong01/conditional-flow-matching)
 - [https://github.com/NVlabs/edm2](https://github.com/NVlabs/edm2)
 
+## Contact
+- Gianluigi Silvestri: gianlu.silvestri@gmail.com
