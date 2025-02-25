@@ -1,0 +1,13 @@
+name: 'ffhq'
+img_resolution: 64
+in_channels: 3
+out_channels: 3
+label_dim: 0
+
+batch_size: 128 # batch per gpu
+num_workers: 32
+data_dir: '.'
+sample_shape: [256, 3, 64, 64]
+plot_type: 'grid'
+fid_sample_shape : [500, 3, 64, 64]
+n_dataset_samples: 50000

@@ -1,0 +1,8 @@
+root_dir: '.'
+run_path: ''
+compute_fid: True
+sample_data: True
+save_dir: 'figures'
+n_iters: [2]
+mid_t: [0.821]
+

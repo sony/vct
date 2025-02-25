@@ -1,0 +1,13 @@
+name: 'cifar10'
+img_resolution: 32
+in_channels: 3
+out_channels: 3
+label_dim: 10
+
+batch_size: 128 # batch per gpu
+num_workers: 16
+data_dir: '.'
+sample_shape: [256, 3, 32, 32]
+plot_type: 'grid'
+fid_sample_shape : [500, 3, 32, 32]
+n_dataset_samples: 50000

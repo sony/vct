@@ -1,0 +1,13 @@
+name: 'ddpmpp'
+embedding_type: 'positional'
+encoder_type: 'standard'
+decoder_type: 'standard'
+channel_mult_noise: 1
+resample_filter: [1,1]
+model_channels: 128
+channel_mult: [2,2,2]
+num_blocks: 4
+dropout: 0.2
+reload_url: ''
+second_time_embedding: False
+return_embeddings: False

@@ -1,0 +1,29 @@
+name: 'ecm'
+ema_rate: 0.9999
+learning_rate: 0.0001
+weight_decay: 0
+use_lr_decay: False
+lr_decay: 2000
+class_conditional: False
+ema_type: 'traditional'
+use_ema: True
+
+total_training_steps: 400000
+kernel: 've' # 've', 'cot'
+sigma_min: 0.003 # same as in Geng et al code
+sigma_max: 80
+p_mean: -1.1
+p_std: 2.0
+sigma_data: 0.5
+mid_t: [0.821]
+coupling: 'independent' # 'independent', 'ot', 'vae'
+kl_loss_scale: 0
+encoder_size: 'small' # 'small', 'big'
+
+n_stages: 8
+q: 2
+c: 0
+k: 8
+b: 1
+adj: 'sigmoid'
+loss_weighting: 'consistency'

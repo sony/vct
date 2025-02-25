@@ -1,0 +1,6 @@
+name: 'adm'
+model_channels: 192
+channel_mult: [1, 2, 3, 4]
+dropout: 0.2
+num_blocks: 3
+reload_url: ''

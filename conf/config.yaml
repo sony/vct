@@ -1,0 +1,31 @@
+defaults:
+ - dataset: cifar10
+ - model: ict
+ - network: ddpmpp
+use_logger: True
+project: 'vct_cifar'
+fast_dev_run: False
+enable_progress_bar: False
+root_dir: '.'
+requeue: True
+log_samples: True
+compute_fid: True
+seed: 42
+extra_name: ''
+reload: False
+run_path: ''
+log_model: 'all'
+deterministic: False
+evaluate_grad_var: False
+
+log_on_epoch: True
+save_checkpoints: True
+log_frequency: 1000
+callback_log_frequency: 10000
+precision: '32-true'
+accumulate_grad_batches: 1
+accelerator: 'auto'
+strategy: 'auto'
+devices: 'auto'
+gradient_clip_val: 0
+batch_multiplier: 1 # only used for naming, to track the total batch size

@@ -1,0 +1,7 @@
+name: 'edm2'
+model_channels: 192
+channel_mult: [1, 2, 3, 4]
+dropout: 0.4
+dropout_res: 16
+num_blocks: 3
+reload_url: ''
