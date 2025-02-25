@@ -1,5 +1,5 @@
 # Implementation of ``Training Consistency Models with Variational Noise Coupling''
-This repository houses the implementation of our work, *VCT: Training Consistency Models with Variational Noise Coupling*
+This repository houses the implementation of our work, **VCT: Training Consistency Models with Variational Noise Coupling**.
 - arXiv: 
 
 ## Requirements
