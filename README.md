@@ -60,3 +60,4 @@ Parts of the code were adapted from the following codebases:
 
 ## Contact
 - Gianluigi Silvestri: gianlu.silvestri@gmail.com
+- Chieh-Hsin (Jesse) Lai: Chieh-Hsin.Lai@sony.com
