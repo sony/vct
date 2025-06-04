@@ -1,6 +1,6 @@
-# Implementation of ``Training Consistency Models with Variational Noise Coupling''
-This repository houses the implementation of our work, **VCT: Training Consistency Models with Variational Noise Coupling**.
-- arXiv: 
+# [ICML 2025] Implementation of ``VCT: Training Consistency Models with Variational Noise Coupling''
+This repository houses the implementation of our work, **VCT: Training Consistency Models with Variational Noise Coupling**, accepted at ICML 2025!
+- arXiv: https://arxiv.org/abs/2502.18197
 
 ## Requirements
 This code uses Weights & Biases, and assumes that you have your wandb key in a file named `wandb_config.py` in a variable named `key=your_wandb_key`.
