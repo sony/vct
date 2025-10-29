@@ -21,7 +21,7 @@ class FIDCallback(L.Callback):
 
     def on_train_start(self, trainer, pl_module):
         with isolate_rng():
-            seed_everything(32, workers=True)
+            torch.manual_seed(32)
             with torch.no_grad():
                 self.fid = self.fid.to(pl_module.device)
                 for batch in trainer.datamodule.fid_dataloader():
