@@ -38,7 +38,7 @@ class FIDCallback(L.Callback):
     def on_train_batch_end(self, trainer, pl_module, outputs, batch, batch_idx):
         if trainer.global_step % self.every_n_iterations == 0:
             with isolate_rng():
-                seed_everything(32, workers=True)
+                torch.manual_seed(32)
                 with torch.no_grad():
                     pl_module.model.eval()
                     self.fid = self.fid.to(pl_module.device)
