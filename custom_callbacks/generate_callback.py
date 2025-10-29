@@ -64,7 +64,7 @@ class GenerateCallback(L.Callback):
 
     def on_train_start(self, trainer: "pl.Trainer", pl_module: "pl.LightningModule") -> None:
         with isolate_rng():
-            seed_everything(32, workers=True)
+            torch.manual_seed(32)
             if pl_module.model.label_dim > 0:
                 labels = torch.arange(self.side_size).repeat_interleave(self.side_size).view(-1)
                 if self.side_size > pl_module.model.label_dim:
@@ -87,7 +87,7 @@ class GenerateCallback(L.Callback):
     def on_train_batch_end(self, trainer, pl_module, outputs, batch, batch_idx):
         if trainer.global_step % self.every_n_iterations == 0:
             with isolate_rng():
-                seed_everything(32, workers=True)
+                torch.manual_seed(32)
                 if pl_module.model.label_dim > 0:
                     labels = torch.arange(self.side_size).repeat_interleave(self.side_size).view(-1)
                     if self.side_size > pl_module.model.label_dim:
