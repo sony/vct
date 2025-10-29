@@ -25,7 +25,10 @@ class LightningConsistencyModel(L.LightningModule):
         self.evaluate_grad_var = cfg.evaluate_grad_var
         self.log_on_epoch = cfg.log_on_epoch
         self.log_on_step = cfg.log_on_epoch == False
-
+        
+    def setup(self, stage: str) -> None:
+        seed = self.cfg.seed + self.trainer.global_rank
+        torch.manual_seed(seed)
 
     def configure_optimizers(self):
         if self.use_lr_decay:
