@@ -1,0 +1,19 @@
+name: vct
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch-cuda=12.1
+  - pytorch==2.3.1
+  - torchaudio==2.3.1
+  - torchvision==0.18.1
+  - click
+  - scipy
+  - tqdm
+  - lightning
+  - matplotlib
+  - torchmetrics
+  - wandb
+  - scikit-learn
+  - piq
+prefix: /home/jesselai/miniconda3/envs/vct
