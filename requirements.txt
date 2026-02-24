@@ -165,9 +165,6 @@ pydantic==2.5.3
 pydantic_core==2.14.6
 Pygments==2.17.2
 pykeops==2.2.3
-pylibcugraph==23.12.0
-pylibcugraphops==23.12.0
-pylibraft==23.12.0
 pynvml==11.4.1
 pyparsing==3.1.1
 pytest==7.4.4
